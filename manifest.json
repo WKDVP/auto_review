@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "fuck DK",
+    "description": "Do class evaluation automatically",
+    "version": "1.0",
+    "icons": {
+    "128": "128.png"
+    },
+    "content_scripts" : [
+        {
+            "matches" : ["https://webinfo.dankook.ac.kr/*"],
+            "js" : ["fuckDk.js"]
+        }
+    ]
+    }
