@@ -9,5 +9,5 @@ setInterval(() => {
         t = document.getElementsByName('lecevQuesTy3List[' + i + '].ansSbjvCont')[0].value = kazusa;
         //console.log(document.getElementsByName('lecevQuesTy3List[' + i + '].ansSbjvCont'));
     }
-    //document.getElementById('saveBtn').click();
+    document.getElementById('saveBtn').click();
 }, 1000);
