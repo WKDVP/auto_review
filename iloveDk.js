@@ -11,3 +11,18 @@ setInterval(() => {
     }
     document.getElementById('saveBtn').click();
 }, 1000);
+
+div_arr = document.getElementsByClassName('items_wrap')
+for (i = 0; i < div_arr.length; i++) {
+    sex = div_arr[i].querySelectorAll('input[type="radio"]')
+    console.log(sex)
+    if(sex.length > 5){
+        for(var j=3; j < sex.length; j+= 5){
+            sex[j].checked = true;
+        }
+    }
+    else if(sex[3] != null){
+        sex[3].checked = true;
+    }
+}
+div_arr[div_arr.length - 1].querySelector('textarea').value = '.'
